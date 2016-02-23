@@ -1,6 +1,6 @@
 {
   "name": "gulp-pug",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Gulp plugin for PugJS",
   "main": "out/index.js",
   "scripts": {
