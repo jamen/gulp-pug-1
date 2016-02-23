@@ -1,5 +1,5 @@
-Your Project
-============
+gulp-pug
+========
 > Gulp plugin for PugJS
 
 ## Installation
