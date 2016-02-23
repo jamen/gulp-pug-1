@@ -14,7 +14,7 @@ export default function gulpPug(opts = {}) {
       error = new PluginError('gulp-pug', 'Unsupported file content');
     }
 
-    file.contents = contents;
+    file.contents = new Buffer(contents);
     callback(error, file);
   });
 };

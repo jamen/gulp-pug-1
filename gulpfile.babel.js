@@ -6,7 +6,7 @@ gulp.task('default', [ 'clean', 'build' ]);
 
 gulp.task('clean', () => del('out'));
 
-gulp.task('build', () => {
+gulp.task('build', [ 'clean' ], () => {
   return gulp.src('src/**.js')
   .pipe(babel())
   .pipe(gulp.dest('out/'));
