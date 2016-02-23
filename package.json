@@ -1,0 +1,45 @@
+{
+  "name": "gulp-pug",
+  "version": "0.0.0",
+  "description": "Gulp for PugJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp; ava",
+    "prepublish": "gulp",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamen/gulp-pug.git"
+  },
+  "keywords": [
+    "gulp",
+    "gulpplugin",
+    "pugjs"
+  ],
+  "author": "Jamen Marzonie <jamenmarz@gmail.com> (http://jamenmarz.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamen/gulp-pug/issues"
+  },
+  "files": [
+    "out"
+  ],
+  "homepage": "https://github.com/jamen/gulp-pug#readme",
+  "devDependencies": {
+    "ava": "^0.12.0",
+    "babel-core": "^6.5.2",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-preset-es2015": "^6.5.0",
+    "del": "^2.2.0",
+    "event-stream": "^3.3.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2"
+  },
+  "dependencies": {
+    "globby": "^4.0.0",
+    "gulp-util": "^3.0.7",
+    "pug": "^0.1.0",
+    "through2": "^2.0.1"
+  }
+}
