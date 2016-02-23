@@ -2,7 +2,7 @@
   "name": "gulp-pug",
   "version": "0.1.2",
   "description": "Gulp plugin for PugJS",
-  "main": "index.js",
+  "main": "out/index.js",
   "scripts": {
     "test": "gulp; ava",
     "prepublish": "gulp",
