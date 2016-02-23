@@ -16,8 +16,9 @@ export default function gulpPug(opts = {}) {
 
     const file = original.clone({
       contents: new Buffer(contents),
-      extname: '.html',
     });
+    file.extname = '.html';
+
     callback(error, file);
   });
 };
