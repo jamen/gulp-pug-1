@@ -1,23 +1,20 @@
 import through from 'through2';
 import pug from 'pug';
 import { join, basename } from 'path';
-import { PluginError } from 'gulp-util';
+import { PluginError, replaceExtension } from 'gulp-util';
 
 export default function gulpPug(opts = {}) {
-  return through.obj(function stream(original, enc, callback) {
+  return through.obj(function stream(file, enc, callback) {
     let error = null;
-    let contents = null;
 
-    if (original.isBuffer()) {
-      contents = pug.compile(original.contents.toString(), opts)(opts.locals);
+    if (file.isBuffer()) {
+      const contents = pug.render(file.contents.toString(), opts);
+      file.contents = new Buffer(contents);
     } else {
       error = new PluginError('gulp-pug', 'Unsupported file content');
     }
 
-    const file = original.clone({
-      contents: new Buffer(contents),
-    });
-    file.extname = '.html';
+    file.path = replaceExtension(file.path, '.html');
 
     callback(error, file);
   });
