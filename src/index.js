@@ -8,7 +8,7 @@ export default function gulpPug(opts = {}) {
     let error = null;
     let contents = null;
 
-    if (file.isBuffer()) {
+    if (original.isBuffer()) {
       contents = pug.compile(original.contents.toString(), opts)(opts.locals);
     } else {
       error = new PluginError('gulp-pug', 'Unsupported file content');
