@@ -1,6 +1,6 @@
 {
   "name": "gulp-pug",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Gulp plugin for compiling Pug templates.",
   "main": "out/index.js",
   "scripts": {
