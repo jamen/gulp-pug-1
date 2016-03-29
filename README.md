@@ -19,6 +19,17 @@ gulp.task('build', function build() {
 });
 ```
 
+### `pug(options)`
+Compile Pug files to HTML files.
+ - `options` (`Object`): Any of [Pug's options](https://github.com/pugjs/pug#options) you want to use.
+
+Example:
+```javascript
+// ...
+.pipe(pug({ pretty: true }))
+.pipe(gulp.dest(out));
+```
+
 ## Credits
 |![Jamen Marz][jamen-image]|
 |:--------:|
