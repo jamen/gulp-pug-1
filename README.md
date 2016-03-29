@@ -1,6 +1,6 @@
 gulp-pug
 ========
-> Gulp plugin for PugJS
+> Gulp plugin for compiling Pug templates.
 
 ## Installation
 ```shell
