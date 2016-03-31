@@ -2,9 +2,11 @@ gulp-pug
 ========
 > Gulp plugin for compiling Pug templates.
 
+A _version agnostic_ Gulp plugin for compiling Pug templates.  In order to use, you must install a version of `pug` alongside `gulp-pug`...  This is so `gulp-pug` can rely on the version of `pug` that you want.
+
 ## Installation
 ```shell
-$ npm install --save-dev gulp-pug
+$ npm install --save-dev gulp-pug pug
 ```
 
 ## Usage
