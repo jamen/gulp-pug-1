@@ -2,7 +2,7 @@
   "name": "gulp-pug",
   "version": "1.1.2",
   "description": "Gulp plugin for compiling Pug templates.",
-  "main": "lib",
+  "main": "lib/index.js",
   "scripts": {
     "test": "eslint lib test; ava"
   },
@@ -21,7 +21,7 @@
     "url": "https://github.com/jamen/gulp-pug/issues"
   },
   "files": [
-    "out"
+    "lib"
   ],
   "homepage": "https://github.com/jamen/gulp-pug#readme",
   "devDependencies": {
