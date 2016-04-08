@@ -2,11 +2,9 @@
   "name": "gulp-pug",
   "version": "1.1.0",
   "description": "Gulp plugin for compiling Pug templates.",
-  "main": "out/index.js",
+  "main": "lib",
   "scripts": {
-    "test": "gulp; ava",
-    "prepublish": "gulp",
-    "build": "gulp"
+    "test": "eslint lib test; ava"
   },
   "repository": {
     "type": "git",
@@ -27,14 +25,11 @@
   ],
   "homepage": "https://github.com/jamen/gulp-pug#readme",
   "devDependencies": {
-    "ava": "^0.12.0",
-    "babel-core": "^6.5.2",
-    "babel-plugin-add-module-exports": "^0.1.2",
-    "babel-preset-es2015": "^6.5.0",
+    "ava": "^0.14.0",
     "del": "^2.2.0",
-    "event-stream": "^3.3.2",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2"
+    "eslint": "^2.7.0",
+    "eslint-config-google": "^0.4.0",
+    "gulp": "^3.9.1"
   },
   "dependencies": {
     "gulp-util": "^3.0.7",
