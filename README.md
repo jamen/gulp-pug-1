@@ -1,7 +1,6 @@
-# Archived: New Repository
-[New repository found here](https://github.com/jamen/gulp-pug)
+**Notice:** This repo is no longer maintained.  Contact me regarding the name or code.
 
-# gulp-pug
+# gulp-pug (Archived)
 > Gulp plugin for compiling Pug templates.
 
 ## Installation
